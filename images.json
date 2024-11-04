@@ -1,82 +1,64 @@
 {
     "images": [
         {
-            "imgPath": "img/places/australia.jpg",
-            "imgLocation": "Australia",
-            "description": "Loch Ard Gorge",
-            "date": "01/01/2016"
+            "imgPath": "img/places/alaska.jpg",
+            "imgLocation": "Alaska",
+            "description": "Whale Swimming",
+            "date": "01/01/2018"
         },
         {
-            "imgPath": "img/places/austria.jpg",
-            "imgLocation": "Austria",
-            "description": "Austrian chapel",
-            "date": "01/02/2016"
+            "imgPath": "img/places/california.jpg",
+            "imgLocation": "california",
+            "description": "Southern California Beaches",
+            "date": "01/02/2018"
         },
         {
-            "imgPath": "img/places/france.jpg",
-            "imgLocation": "Paris",
-            "description": "Eiffel Tower",
-            "date": "01/03/2016"
+            "imgPath": "img/places/Delaware.jpg",
+            "imgLocation": "Delaware",
+            "description": "Bridge on the coast",
+            "date": "01/03/2018"
         },
         {
-            "imgPath": "img/places/greece.jpg",
-            "imgLocation": "Greece",
-            "description": "Greek coastline",
-            "date": "01/04/2016"
+            "imgPath": "img/places/florida.jpg",
+            "imgLocation": "Florida",
+            "description": "Florida Gator",
+            "date": "01/04/2018"
         },
         {
-            "imgPath": "img/places/hungary.jpg",
-            "imgLocation": "Hungary",
-            "description": "Budapest skyline",
-            "date": "01/05/2016"
+            "imgPath": "img/places/kansas.jpg",
+            "imgLocation": "Kansas",
+            "description": "Man working",
+            "date": "01/05/2018"
         },
         {
-            "imgPath": "img/places/india.jpg",
-            "imgLocation": "India",
-            "description": "Taj Mahal",
-            "date": "01/06/2016"
+            "imgPath": "img/places/maine.jpg",
+            "imgLocation": "Maine",
+            "description": "Maine Lobster",
+            "date": "01/06/2018"
         },
         {
-            "imgPath": "img/places/italy.jpg",
-            "imgLocation": "Italy",
-            "description": "Venice",
-            "date": "01/07/2016"
+            "imgPath": "img/places/michigan.jpg",
+            "imgLocation": "Michigan",
+            "description": "Longest Suspension bridge",
+            "date": "01/07/2018"
         },
         {
-            "imgPath": "img/places/japan.jpg",
-            "imgLocation": "Japan",
-            "description": "Hirosaki Castle",
-            "date": "01/08/2016"
+            "imgPath": "img/places/newhampshire.jpg",
+            "imgLocation": "New Hampshire",
+            "description": "Inside a Valley",
+            "date": "01/08/2018"
         },
         {
-            "imgPath": "img/places/korea.jpg",
-            "imgLocation": "South Korea",
-            "description": "Seoul",
-            "date": "01/09/2016"
+            "imgPath": "img/places/ohio.jpg",
+            "imgLocation": "Ohio",
+            "description": "Lake Eerie",
+            "date": "01/09/2018"
         },
         {
-            "imgPath": "img/places/norway.jpg",
-            "imgLocation": "Norway",
-            "description": "Countryside mountains",
-            "date": "01/10/2016"
-        },
-        {
-            "imgPath": "img/places/switzerland.jpg",
-            "imgLocation": "Switzerland",
-            "description": "Lake castle",
-            "date": "01/11/2016"
-        },
-        {
-            "imgPath": "img/places/thailand.jpg",
-            "imgLocation": "Thailand",
-            "description": "Beachline",
-            "date": "01/12/2016"
-        },
-        {
-            "imgPath": "img/places/turkey.jpg",
-            "imgLocation": "Turkey",
-            "description": "Istanbul",
-            "date": "01/13/2016"
+            "imgPath": "img/places/wisconsin.jpg",
+            "imgLocation": "Wisconsin",
+            "description": "City Life",
+            "date": "01/10/2018"
         }
   ]
 }
