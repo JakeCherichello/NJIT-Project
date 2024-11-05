@@ -1,6 +1,6 @@
 let mCurrentIndex = 0 // Tracks the current image index
 let mImages = [] // Array to hold GalleryImage objects
-const mUrl = 'https://your-json-url.com' // Replace with actual JSON URL
+const mUrl = 'https://api.npoint.io/e51173573b0f469e04b9' // Replace with actual JSON URL
 const mWaitTime = 5000 // Timer interval in milliseconds
 
 $(document).ready(() => {
@@ -21,10 +21,21 @@ $(document).ready(() => {
 })
 
 // Function to fetch JSON data and store it in mImages
-function fetchJSON () {
-  // Use $.ajax here to request the JSON data from mUrl
-  // On success, parse the JSON and push each image object into mImages array
-  // After JSON is loaded, call swapPhoto() to display the first image
+function fetchJSON() {
+  $.ajax({
+    url: mUrl,
+    method: 'GET',
+    dataType: 'json',
+    success: function(data) {
+      mImages = data.images;
+      console.log("JSON data retrieved successfully");
+      console.log(mImages);
+      swapPhoto(); // Call swapPhoto() to display the first image after loading
+    },
+    error: function(xhr, status, error) {
+      console.error("Error retrieving JSON data:", error);
+    }
+  });
 }
 
 // Function to swap and display the next photo in the slideshow
