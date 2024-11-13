@@ -24,26 +24,36 @@ $(document).ready(() => {
 function fetchJSON() {
   $.ajax({
     url: mUrl,
-    method: 'GET',
     dataType: 'json',
-    success: function(data) {
+    success: function (data) {
       mImages = data.images;
-      console.log("JSON data retrieved successfully");
-      console.log(mImages);
-      swapPhoto(); // Call swapPhoto() to display the first image after loading
+      const image = mImages[mCurrentIndex];
+      $('#photo').attr('src', image.imgPath);
+      $('.location').text(`Location: ${image.imgLocation}`);
+      $('.description').text(`Description: ${image.description}`);
+      $('.date').text(`Date: ${image.date}`);
     },
-    error: function(xhr, status, error) {
-      console.error("Error retrieving JSON data:", error);
+    error: function () {
+      alert("Failed to load");
     }
-  });
+  })
 }
 
 // Function to swap and display the next photo in the slideshow
-function swapPhoto () {
+function swapPhoto() {
   // Access mImages[mCurrentIndex] to update the image source and details
+  const image = mImages[mCurrentIndex];
+  console.log(image.imgPath);
+
   // Update the #photo element's src attribute with the current image's path
+  $('#photo').attr('src', image.imgPath);
+
   // Update the .location, .description, and .date elements with the current image's details
+  $('.location').text(`Location: ${image.imgLocation}`);
+  $('.description').text(`Description: ${image.description}`);
+  $('.date').text(`Date: ${image.date}`);
 }
+
 
 // Advances to the next photo, loops to the first photo if the end of array is reached
 function showNextPhoto () {
