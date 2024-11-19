@@ -1,94 +1,99 @@
 body {
     overflow-x: hidden;
     font-family: 'Century Gothic', sans-serif;
-    background-image: url('../img/bg2.jpg');
-    background-size: cover;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     background-attachment: fixed;
+    color: #333;
 }
 
-/* Main container for the slideshow and metadata */
 #photoBooth {
-    padding: 25px; /* Increased padding for better spacing */
-    max-width: 500px; /* Increased max-width for larger display */
-    width: 90%; /* Keeps width responsive */
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    margin-top: 50px;
 }
 
-/* Holds the displayed photo */
-.photoHolder {
-    width: 100%;
-    text-align: center;
+#photoBooth:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
 }
 
-/* Style for the photo displayed in the slideshow */
-.thumbnail {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    /* Optional: Add shadow here */
-}
-
-/* Style for the title/banner */
 .banner {
-    font-size: 2rem; /* Increased font size for better readability */
+    font-size: 2.5rem;
+    color: #5a3d8a;
     font-weight: bold;
-    color: #333;
-    /* Optional: Customize the text color */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Style for the 'More Content' indicator */
+.photoHolder {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.thumbnail {
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
 .moreIndicator {
-    height: 50px; /* Adjust size for a balanced look */
     width: 50px;
+    height: 50px;
     cursor: pointer;
-    transition: transform 0.3s ease; /* Smooth rotation transition */
-    /* Add initial rotation styling here */
+    transition: all 0.3s ease;
+    opacity: 0.7;
 }
 
-/* Navigation button styles */
+.moreIndicator:hover {
+    opacity: 1;
+    transform: rotate(360deg);
+}
+
 #nav img {
-    height: 50px; /* Adjust button size for responsiveness */
-    width: 50px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
-    transition: opacity 0.3s; /* Optional: Add hover effect */
+    transition: all 0.3s ease;
+    opacity: 0.6;
 }
 
-/* Metadata container styling */
+#nav img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
 .details {
-    border: 1px dashed #000;
+    background-color: #f4f4f4;
+    border-radius: 10px;
     padding: 15px;
-    background-color: #f8f9fa; /* Light background to distinguish from main area */
-    border-radius: 4px;
-    color: #333;
-    font-size: 1rem; /* Slightly larger text for readability */
+    margin-top: 15px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
 }
 
-/* Style for each paragraph in details */
 .details p {
-    margin: 10px 0;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 0.9rem;
 }
 
-/* Add CSS styles to rotate the element 90deg
-Make it animate nicely. You'll need CSS3 for this */
 .rot90 {
     transform: rotate(90deg);
     transition: transform 0.3s ease-in-out;
 }
 
-/* Add CSS styles to rotate the element 180deg
-Make it animate nicely. You'll need CSS3 for this */
 .rot180 {
     transform: rotate(180deg);
     transition: transform 0.3s ease-in-out;
 }
 
-/* Add CSS styles to rotate the element 270deg
-Make it animate nicely. You'll need CSS3 for this */
 .rot270 {
     transform: rotate(270deg);
     transition: transform 0.3s ease-in-out;
 }
+
